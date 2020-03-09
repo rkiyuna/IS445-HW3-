@@ -42,6 +42,7 @@ function getArray(numObj) {
     arr.push(i);
   }
 
+  //when increment is negative
   for (let i = start; i >= end; i += incrementer) {
     arr.push(i);
   }
