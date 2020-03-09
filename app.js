@@ -41,6 +41,10 @@ function getArray(numObj) {
   for (let i = start; i <= end; i += incrementer) {
     arr.push(i);
   }
+
+  for (let i = start; i >= end; i += incrementer) {
+    arr.push(i);
+  }
   return arr;
 }
 
