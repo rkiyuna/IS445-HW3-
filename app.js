@@ -1,9 +1,11 @@
+//keep object constant
 const numObj = {
   start: null,
   incrementer: null,
   end: null
 };
 
+//window prompts
 numObj.start = Number(window.prompt("Enter the start:"));
 numObj.end = Number(window.prompt("Enter the end:"));
 numObj.incrementer = Number(window.prompt("Enter the incrementer:"));
@@ -14,6 +16,7 @@ if (
   isFinite(numObj.incrementer) &&
   isFinite(numObj.end)
 ) {
+  //link variables to text sentences
   var arr = getArray(numObj);
   output.innerText = "The generated array is " + arr.join(", ");
 
@@ -27,6 +30,7 @@ if (
   output.innerText = "invalid integer input. please reload and try again";
 }
 
+//functions
 function getArray(numObj) {
   var start = numObj.start;
   var incrementer = numObj.incrementer;
