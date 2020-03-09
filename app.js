@@ -27,7 +27,7 @@ if (
   output.innerText +=
     "\n The binary of absolute element values are: " + binary.join(", ");
 } else {
-  output.innerText = "invalid integer input. please reload and try again";
+  output.innerText = "Invalid integer input, please reload and try again.";
 }
 
 //functions
